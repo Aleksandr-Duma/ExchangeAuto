@@ -1,0 +1,553 @@
+/*....................LK-CAR-PAGE.................*/
+
+.inner-home-link-wrap.car-page{
+	margin-bottom: 20px;
+}
+
+.car-page-title{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.4;
+	color: @main-text;
+	text-align: center;
+	margin-bottom: 10px;
+
+	@media (min-width: 1200px) {
+    	font-size: 30px;
+		line-height: 1.4;
+		text-align: left;
+		margin-bottom: 20px;
+  	}
+}
+
+.wrap-car-content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	@media (min-width: 1200px) {
+		flex-direction: row;
+    	justify-content: space-between;
+		align-items: flex-start;
+  	}
+}
+
+.car-content-main{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 1200px) {
+		width: 72%;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+  	}
+
+  	@media (min-width: 1410px) {
+		width: 76%;
+  	}
+}
+
+.car-block-galery{
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		width: 100%;
+		height: 355px;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+  	}
+}
+
+.car-block-galery-slider{
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+
+	@media (min-width: 700px) {
+		width: 60%;
+  	}
+
+  	@media (min-width: 1200px) {
+		width: 54%;
+		height: 345px;
+  	}
+}
+
+.slider-big-img{
+	width: 100%;
+	height: 100%;
+}
+
+.car-block-galery-image{
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 10px 10px 0 10px;
+	
+	@media (min-width: 700px) {
+		width: 60%;
+		justify-content: center;
+  	}	
+
+	@media (min-width: 1200px) {
+		width: 46%;
+		height: 350px;
+		padding: 0 15px 0 15px;
+  	}
+}
+
+.car-block-galery-image-item{
+	width: 22%;
+	height: auto;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	margin: 4px;
+
+	@media (min-width: 1200px) {
+		width: 45%;
+  	}
+
+  	@media (min-width: 1410px) {
+		height: 165px;
+		padding-bottom: 0;
+  	}
+}
+
+.car-block-galery-overay{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.car-block-dropdown-block{
+	width: 100%;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: @main-shadow;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+
+	@media (min-width: 700px) {
+		width: 70%;
+  	}
+
+	@media (min-width: 1200px) {
+		width: 100%;
+		padding: 5px 35px 25px 35px;
+		margin-bottom: 30px;
+  	}
+}
+
+.car-block-dropdown-head{
+	width: 100%;
+	position: relative;
+
+	&:after{
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 6px solid @main-green;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 20px 0 0 0;
+
+		&:after{
+			top: 40px;
+			right: 0;
+		}
+  	}
+}
+
+.car-block-dropdown-head.active:after{
+	transform: rotate(-180deg);
+}
+
+.car-block-dropdown-title{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.8;
+	color: @main-text;
+	text-align: left;
+
+	@media (min-width: 1200px) {
+		font-size: 22px;
+		line-height: 2.2;
+  	}
+}
+
+.car-block-dropdown-body{
+	display: none;
+
+	@media (min-width: 1200px){
+		border-top: 1px solid @gray-bg;
+		padding-top: 10px;
+  	}
+}
+
+.wrap-content-dropdown-body{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 1200px){
+		flex-direction: row;
+  	}
+}
+
+.car-block-dropdown-body-left{
+	width: 100%;
+
+	@media (min-width: 1200px){
+		width: 50%;
+		padding-right: 20px;
+  	}
+}
+
+.car-block-dropdown-discription{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.car-dropdown-discription-key{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 2;
+	color: #7C7C7C;
+
+	@media (min-width: 1200px){
+		font-size: 16px;
+		line-height: 2.1;
+  	}
+}
+
+.car-dropdown-discription-value{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	color: @main-text;
+
+	@media (min-width: 1200px){
+		font-size: 16px;
+		line-height: 2.1;
+  	}
+}
+
+.car-dropdown-discription-value-gray{
+	text-transform: uppercase;
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 8px;
+	line-height: 2;
+	color: @main-text;
+	border-radius: 5px;
+	background-color: @gray-bg;
+	padding: 0 10px 0 10px;
+
+	@media (min-width: 1200px){
+		font-size: 10px;
+		line-height: 2.6;
+  	}
+}
+
+.car-dropdown-text{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	color: @main-text;
+
+	@media (min-width: 1200px){
+		font-size: 16px;
+		line-height: 2.1;
+  	}
+}
+
+.car-block-dropdown-body-right{
+	width: 100%;
+
+	@media (min-width: 1200px){
+		width: 50%;
+		padding-left: 20px;
+  	}
+}
+
+.car-slider-title-wrap{
+	width: 100%;
+	padding: 20px 0 5px 0;
+}
+
+.car-slider-title{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	text-align: center;
+	color: @main-text;
+
+	@media (min-width: 1200px){
+		font-size: 22px;
+		line-height: 2;
+		text-align: left;
+  	}
+}
+
+.car-slider-wrap{
+	width: 100%;
+	margin-bottom: 40px;
+
+	@media (min-width: 1200px){
+		font-size: 22px;
+		line-height: 2;
+		margin-bottom: 10px;
+  	}
+}
+
+.car-slider-item{
+	display: flex;
+	justify-content: center;
+}
+
+.wrap-car-sidebar{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15px;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		width: 300px;
+		padding-top: 0;
+		margin: -102px 0 0 0;
+	}
+
+	@media (min-width: 1410px) {
+		width: 315px;
+	}
+}
+
+.car-content-sidebar{
+	width: 100%;
+	background-color: @gray-bg;
+	border-radius: 5px;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+
+	@media (min-width: 500px) {
+		width: 320px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 300px;
+		padding: 32px 25px 25px 25px;
+	}
+
+	@media (min-width: 1410px) {
+		width: 315px;
+	}
+}
+
+.car-content-sidebar-text{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.4;
+	color: @main-text;
+	text-align: left;
+	margin-bottom: 35px;
+
+	@media (min-width: 1410px) {
+		font-size: 16px;
+	}
+}
+
+.car-content-sidebar-user-wrap{
+	width: 100%;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.car-content-sidebar-user-photo{
+	width: 27%;
+}
+
+.car-sidebar-user-photo-circle{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	padding-top: 18px;
+}
+
+.car-user-icon-svg{
+	width: 25px;
+	fill: #8d9aa8;
+}
+
+.car-content-sidebar-user-name{
+	width: 73%;
+	padding: 12px 0 0 3px;
+}
+
+.car-content-sidebar-user-text-top{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1;
+	color: @main-text;
+	text-align: left;
+	margin-bottom: 7px;
+}
+
+.car-content-sidebar-user-text-bottom{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	color: #8D9AA8;
+	text-align: left;
+}
+
+.car-sidebar-bascket-button{
+	text-decoration: none;
+	width: 100%;
+	height: 65px;
+	border-radius: 5px;
+	background-color: #fff;
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: @main-text;
+	text-align: left;
+	padding: 0 65px 15px 25px;
+
+	@media (min-width: 1410px) {
+		font-size: 16px;
+	}
+}
+
+.car-bascket-svg{
+	width: 25px;
+	margin-right: 15px;
+}
+
+.car-sidebar-contact-button{
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	height: 65px;
+	border-radius: 5px;
+	background-color: @main-green;
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	padding: 15px 25px 0 25px;
+}
+
+.car-sidebar-contact-button-text-top{
+	text-transform: uppercase;
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.4;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.car-sidebar-contact-button-text-bottom{
+	text-transform: uppercase;
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+}
+
+.all-data-block-sidebar{
+	width: 100%;
+	height: 60px;
+	border-radius: 5px;
+	border: 1px solid @gray-bg;
+	background-color: #fff;
+	position: relative;
+	padding: 20px 0 0 40px;
+
+	&:before{
+		content: "✓";
+		display: block;
+		font-size: 19px;
+		color: #fff;
+		text-align: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: @main-green;
+		position: absolute;
+		top: 15px;
+		left: 37px;
+	}
+
+	@media (min-width: 500px) {
+		width: 320px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 100%;
+		padding-top: 18px;
+	}
+}
+
+.all-data-block-sidebar-text{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.3;
+	color: #8D9AA8;
+	text-align: center;
+
+	@media (min-width: 1410px) {
+		font-size: 16px;
+	}
+}
+
+
+
+

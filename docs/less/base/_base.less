@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: 'Proxima_Nova', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1300px) {
+    width: 95%;
+  }
+
+  @media (min-width: 1410px) {
+    width: 1410px;
+  }
+}
+
+.wrapper{
+	min-height: 100vh;		
+	display: flex;
+	flex-direction: column;
+}
+
+/*...................INNER-PAGE-WRAP..................*/
+
+.wrap-inner-page{
+  padding: 20px 15px 10px 15px;
+
+  @media (min-width: 1200px) {
+     padding: 59px 26px 30px 26px;
+    }
+}
+
+.inner-home-link-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1px;
+  margin-bottom: 12px;
+}
+
+.inner-home-link{
+  text-decoration: none;
+}
+
+.inner-home-icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: @main-green;
+  text-align: center;
+  padding-top: 5px;
+  position: relative;
+  margin-right: 25px;
+
+    &:hover{
+      background-color: #7faa46;
+    }
+
+  &:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid @gray-text;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    transform: rotate(-90deg);
+  }
+}
+
+.home-icon-svg{
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+}
+
+.link-name-section{
+  text-decoration: none;
+  font-family: 'Proxima_Nova', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: @gray-text;
+
+    &:hover{
+      color: @main-green;
+      text-decoration: underline;
+    }
+}
